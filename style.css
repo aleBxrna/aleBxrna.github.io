@@ -61,7 +61,7 @@ nav .navbar .menu li{
   margin: 0 8px;
 }
 .navbar .menu a{
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 500;
   color: #0E2431;
   padding: 6px 0;
@@ -111,21 +111,34 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
-  /* background: url("https://github.com/Kapil987/contactKapil.github.io/blob/main/images/background.png") no-repeat; */
-  background: url("images/background.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: #F0F8FF;
+  display: flex;
   font-family: 'Ubuntu', sans-serif;
 }
+
 .home .home-content{
-  width: 90%;
-  height: 100%;
-  margin: auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .home-content .home-text{
+  width: 100%;
+  padding-left: 200px;
+  padding-right: 400px;
+}
+
+.home .home-content .home-image{
+  width: 60%;
+  display: flex;
   justify-content: center;
 }
+.home .home-image img{
+  height: 800px;
+  width: 800px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 .home .text-one{
   font-size: 25px;
   color: #0E2431;
@@ -190,11 +203,16 @@ nav.sticky .menu-btn{
 }
 
 /* About Section Styling */
-/* Those Elements Where We Have Apply Same CSS,
- I'm Selecting Directly 'Section Tag' and 'Class'  */
 section{
-  padding-top: 40px;
+  background: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
+
+section .title span{
+  font-size: 76px;
+}
+
 section .content{
   width: 80%;
   margin: 40px auto;
@@ -204,6 +222,7 @@ section .content{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 23px;
 }
 section .title{
   display: flex;
@@ -212,7 +231,7 @@ section .title{
 }
 section .title span{
   color: #0E2431;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
   position: relative;
   padding-bottom: 8px;
@@ -247,7 +266,7 @@ section .title span::after{
 }
 section  .topic{
   color: #0E2431;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -276,36 +295,37 @@ section .button button:hover{
   color: #4070f4;
 }
 
- /* My Skills – Clean & Technical */
-
+ /* My Skills */
 .skills {
   background: #F0F8FF;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
-.skills .content {
-  padding: 4px 0;
+.skills .title span {
+  font-size: 36px;
 }
 
 .skills .skills-details {
   display: flex;
-  gap: 40px;
+  gap: 80px;
   align-items: flex-start;
 }
 
 /* Left text */
 .skills-details .text {
-  width: 65%;
+  width: 45%;
 }
 
 .skills-details .text .topic {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 600;
   color: #0E2431;
   margin-bottom: 15px;
 }
 
 .skills-details .text p {
-  font-size: 15px;
+  font-size: 23px;
   line-height: 1.7;
   color: #0E2431;
   text-align: left;
@@ -327,7 +347,7 @@ section .button button:hover{
 }
 
 .skills-details .box .topic {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #4070f4;
   margin-bottom: 6px;
@@ -341,12 +361,25 @@ section .button button:hover{
 
 
 /* My Projects CSS */
-.services .boxes{
+
+.services{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.services .title span{
+  font-size: 36px;
+}
+
+.services .content{
+  font-size: 23px;
+}
+
+.services .projects-grid{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.services .boxes .box{
+.services .projects-grid .box{
   margin: 20px 0;
   width: calc(100% / 3 - 20px);
   text-align: center;
@@ -356,11 +389,11 @@ section .button button:hover{
   cursor: default;
   transition: all 0.4s ease;
 }
-.services .boxes .box:hover{
+.services .projects-grid .box:hover{
   background: #4070f4;
   color: #fff;
 }
-.services .boxes .box .icon{
+.services .projects-grid .box .icon{
   height: 50px;
   width: 50px;
   /* background: #4070f4; */
@@ -373,23 +406,31 @@ section .button button:hover{
   margin: 0 auto 10px auto;
   transition: all 0.4s ease;
 }
-.boxes .box:hover .icon{
+.projects-grid .box:hover .icon{
   background-color: #fff;
   color: #4070f4;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.services .projects-grid .box:hover .topic,
+.services .projects-grid .box:hover p{
   color: #0E2431;
   transition: all 0.4s ease;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.services .projects-grid .box:hover .topic,
+.services .projects-grid .box:hover p{
   color: #fff;
 }
+
 /* Contact Me CSS */
 .contact{
   background: #F0F8FF;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
+.contact .title span{
+  font-size: 36px;
+}
+
 .contact .content{
   margin: 0 auto;
   padding: 30px 0;
@@ -422,12 +463,12 @@ footer .text span a:hover{
 /* Scroll TO Top Button CSS */
 .scroll-button a{
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   color: #fff;
   background: #4070f4;
   padding: 7px 12px;;
-  font-size: 18px;
+  font-size: 25px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
