@@ -276,59 +276,69 @@ section .button button:hover{
   color: #4070f4;
 }
 
- /* My Skills CSS */
- .skills{
-   background: #F0F8FF;
- }
- .skills .content{
-   padding: 40px 0;
- }
- .skills .skills-details{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
- .skills-details .text{
-   width: 50%;
- }
- .skills-details p{
-   color: #0E2431;
-   text-align: justify;
- }
-.skills .skills-details .experience{
+ /* My Skills – Clean & Technical */
+
+.skills {
+  background: #F0F8FF;
+}
+
+.skills .content {
+  padding: 60px 0;
+}
+
+.skills .skills-details {
   display: flex;
-  align-items: center;
-  margin: 0 10px;
+  gap: 40px;
+  align-items: flex-start;
 }
-.skills-details .experience .num{
-  color: #0E2431;
-  font-size: 80px;
-}
-.skills-details .experience .exp{
-  color: #0E2431;
-  margin-left: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 6px;
-}
-.skills-details .boxes{
+
+/* Left text */
+.skills-details .text {
   width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
-.skills-details .box{
-  width: calc(100% / 2 - 20px);
-  margin: 20px 0;
+
+.skills-details .text .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0E2431;
+  margin-bottom: 15px;
 }
-.skills-details .boxes .topic{
-  font-size: 20px;
+
+.skills-details .text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #0E2431;
+  text-align: left;
+}
+
+/* Right skills grid */
+.skills-details .boxes {
+  width: 55%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skills-details .box {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.skills-details .box .topic {
+  font-size: 16px;
+  font-weight: 600;
   color: #4070f4;
+  margin-bottom: 6px;
 }
-.skills-details .boxes .per{
-  font-size: 60px;
-  color: #4070f4;
+
+.skills-details .box p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
 }
+
 
 /* My Services CSS */
 .services .boxes{
