@@ -283,7 +283,7 @@ section .button button:hover{
 }
 
 .skills .content {
-  padding: 40px 0;
+  padding: 4px 0;
 }
 
 .skills .skills-details {
@@ -294,7 +294,7 @@ section .button button:hover{
 
 /* Left text */
 .skills-details .text {
-  width: 45%;
+  width: 65%;
 }
 
 .skills-details .text .topic {
